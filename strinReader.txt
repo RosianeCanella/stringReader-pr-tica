@@ -1,0 +1,8 @@
+using System.Text;
+var sb = new StringBuilder();
+sb.AppendLine("Caracteres na primeira linha para ler");
+sb.AppendLine("e a segunda Linha");
+sb.AppendLine(" e o fim");
+
+using var sr = new StringReader(sb.ToString());
+sr.ReadToEnd();// ou sr.ReadTo Line();
